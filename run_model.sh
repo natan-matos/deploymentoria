@@ -7,6 +7,6 @@ path_to_envs='/home/ubuntu/.pyenv/shims'
 
 
 # run Jupyter Notebook using papermill
-$path_to_envs/papermil $path/notebooks/deploy-mentoria.ipynb $path/reports/deploy-mentoria-$data.ipynb
+$path_to_envs/papermill $path/notebooks/deploy-mentoria.ipynb $path/reports/deploy-mentoria-$data.ipynb
 
 
