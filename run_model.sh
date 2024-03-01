@@ -1,21 +1,11 @@
 # variable
 data=$(date +'%Y-%m-%dT%H:%M:%S')
 
-# pyenv path
-pyenv_path='/home/ubuntu/.pyenv'
-
-# Load pyenv into the shell
-export PATH="$pyenv_path/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
-
-# activate env
-pyenv activate clusterenv
-
-# full path for papermill
-papermill_path=$(which papermill)
+# path
+path = '/home/unbuntu/deploymentoria'
+path_to_envs = '/home/ubuntu/.pyenv/shims'
 
 # run Jupyter Notebook using papermill
-$papermill_path /home/ubuntu/deploymentoria/notebooks/deploy-mentoria.ipynb /home/ubuntu/deploymentoria/notebooks/deploy-mentoria-$data.ipynb
+$path_to_envs papermil $path/notebooks/deploy-mentoria.ipynb $path/reports/deploy-mentoria-$data.ipynb
 
 
