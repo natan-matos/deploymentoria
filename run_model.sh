@@ -2,14 +2,12 @@
 data=$(date +'%Y-%m-%dT%H:%M:%S')
 
 # conda path
-conda_path='/home/natan/miniconda3'
+pyenv_path='/home/ubuntu/.pyenv'
 
 # activate env
-source $conda_path/etc/profile.d/conda.sh
-conda activate base
+source $pyenv_path/libexec/pyenv
 
 # cluster env
-conda activate clusterenv
+pyenv activate clusterenv
 
-
-papermill /home/natan/Documents/pa05/notebooks/12-nm-deploy-final.ipynb /home/natan/Documents/pa05/src/12-nm-deploy-$data.ipynb
+#papermill /home/ubuntu/deploymentoria/notebooks/deploy-mentoria.ipynb /home/ubuntu/deploymentoria/notebooks/deploy-mentoria-$data.ipynb
