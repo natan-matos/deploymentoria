@@ -2,9 +2,9 @@
 data=$(date +'%Y-%m-%dT%H:%M:%S')
 
 # path
-path_to_envs = '/home/ubuntu/.local/bin/'
+#path_to_envs = '/home/ubuntu/.local/bin/'
 
 # run Jupyter Notebook using papermill
-$path_to_envs papermil /home/ubuntu/deploymentoria/notebooks/deploy-mentoria.ipynb /home/ubuntu/deploymentoria/reports/deploy-mentoria-$data.ipynb
+papermil /home/ubuntu/deploymentoria/notebooks/deploy-mentoria.ipynb /home/ubuntu/deploymentoria/reports/deploy-mentoria-$data.ipynb
 
 
