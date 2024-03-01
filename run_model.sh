@@ -1,3 +1,8 @@
+# load pyenv 
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
 # variable
 data=$(date +'%Y-%m-%dT%H:%M:%S')
 
@@ -10,5 +15,5 @@ data=$(date +'%Y-%m-%dT%H:%M:%S')
 # cluster env
 pyenv activate clusterenv
 
-papermill_path=$(wich papermill)
+papermill_path=$(which papermill)
 #$papermill_path /home/ubuntu/deploymentoria/notebooks/deploy-mentoria.ipynb /home/ubuntu/deploymentoria/notebooks/deploy-mentoria-$data.ipynb
